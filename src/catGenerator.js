@@ -36,7 +36,7 @@ async function getACat() {
 
   return {
     img: regular,
-    source: (name || html) ? `credit: ${name} ${html}` : ''
+    source: (name || html) ? `#cat credit: ${name} ${html}` : '#cat'
   };
 }
 
