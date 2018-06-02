@@ -14,12 +14,12 @@ try {
   };
 }
 
-const COLLECTIONS = [1494900, 139386, 258603, 1494397, 1043053, 400003];
+const collections = [1494900, 139386, 258603, 1494397, 1043053, 400003];
 const unsplash = new Unsplash(auth);
 
 async function getACat() {
   const photo = await toJson(
-    await unsplash.photos.getRandomPhoto({ COLLECTIONS })
+    await unsplash.photos.getRandomPhoto({ collections })
   );
   
   const {
